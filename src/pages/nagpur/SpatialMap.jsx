@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { MapContainer, TileLayer, CircleMarker, Circle, Popup, useMap } from 'react-leaflet'
 import { Filter, ChevronDown, Layers } from 'lucide-react'
 import 'leaflet/dist/leaflet.css'
+import API from '../../api'
 
 const API = 'http://localhost:8080/api'
 

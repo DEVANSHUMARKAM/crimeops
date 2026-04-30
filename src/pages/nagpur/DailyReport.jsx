@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Printer, Download, AlertTriangle, MapPin } from 'lucide-react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import jsPDF from 'jspdf'
+import API from '../../api'
 import autoTable from 'jspdf-autotable'
 
 const API = 'http://localhost:8080/api'

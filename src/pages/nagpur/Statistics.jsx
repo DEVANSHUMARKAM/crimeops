@@ -5,6 +5,7 @@ import {
   PieChart, Pie, Cell, AreaChart, Area
 } from 'recharts'
 import { Search, Download, ChevronLeft, ChevronRight } from 'lucide-react'
+import API from '../../api'
 
 const API = 'http://localhost:8080/api'
 

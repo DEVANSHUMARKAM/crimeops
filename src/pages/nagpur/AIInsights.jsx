@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import API from '../../api'
 import { Brain, MapPin, AlertTriangle, Shield, Camera, Navigation, RefreshCw, ChevronDown, ChevronUp, Zap } from 'lucide-react'
 
 const API = 'http://localhost:8080/api'

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Outlet, useNavigate, useLocation } from 'react-router-dom'
 import { Shield, LayoutDashboard, Map, Brain, BarChart2, FileText, AlertTriangle } from 'lucide-react'
 import LiveCrimeNotification from '../../components/LiveCrimeNotification'
+import API from '../../api'
 
 const API = 'http://localhost:8080/api'
 
