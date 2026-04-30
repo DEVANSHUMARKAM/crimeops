@@ -5,7 +5,7 @@ import jsPDF from 'jspdf'
 import API from '../../api'
 import autoTable from 'jspdf-autotable'
 
-const API = 'http://localhost:8080/api'
+
 
 const COLORS = ['#3b82f6','#ef4444','#22c55e','#f59e0b','#8b5cf6','#06b6d4','#f97316','#84cc16','#db2777','#7c3aed']
 

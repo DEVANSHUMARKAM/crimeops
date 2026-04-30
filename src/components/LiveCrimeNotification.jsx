@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { X, AlertTriangle, MapPin, Shield } from 'lucide-react'
 
-const API = 'http://localhost:8080/api'
+
 
 const CRIME_ICONS = {
   'theft': '🔴',

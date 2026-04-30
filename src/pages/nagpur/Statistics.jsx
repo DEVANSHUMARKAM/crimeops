@@ -7,7 +7,7 @@ import {
 import { Search, Download, ChevronLeft, ChevronRight } from 'lucide-react'
 import API from '../../api'
 
-const API = 'http://localhost:8080/api'
+
 
 const CRIME_COLORS = {
   'theft': '#3b82f6', 'burglary': '#6366f1', 'accident': '#f59e0b',

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { TrendingUp, AlertTriangle, Zap, Clock, Brain, ArrowRight, ArrowUpRight, ArrowDownRight } from 'lucide-react'
 import API from '../../api'
 
-const API = 'http://localhost:8080/api'
+
 
 export default function Dashboard() {
   const [crimes, setCrimes] = useState([])

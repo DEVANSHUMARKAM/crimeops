@@ -4,7 +4,7 @@ import { Shield, LayoutDashboard, Map, Brain, BarChart2, FileText, AlertTriangle
 import LiveCrimeNotification from '../../components/LiveCrimeNotification'
 import API from '../../api'
 
-const API = 'http://localhost:8080/api'
+
 
 export default function DashboardLayout() {
   const navigate = useNavigate()
