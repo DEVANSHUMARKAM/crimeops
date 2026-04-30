@@ -44,20 +44,16 @@ export default function LandingPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/90" />
         </div>
 
-        {/* Side by side layout */}
-        <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        {/* Side by side layout — stacks on mobile */}
+        <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
 
-          {/* LEFT — Nagpur City Police Logo */}
-          <div className="flex flex-col items-center justify-center">
+          {/* LEFT — Logo — hidden on small mobile, shown on md+ */}
+          <div className="hidden md:flex flex-col items-center justify-center">
             <div className="relative">
-              {/* Outer glow ring */}
               <div className="absolute inset-0 rounded-full bg-blue-600/10 blur-2xl scale-110" />
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border border-blue-800/30 bg-black/40 backdrop-blur flex items-center justify-center p-6">
-                <img
-                  src="/nagpur-police-logo.png"
-                  alt="Nagpur City Police"
-                  className="w-full h-full object-contain drop-shadow-2xl"
-                />
+                <img src="/nagpur-police-logo.png" alt="Nagpur City Police"
+                  className="w-full h-full object-contain drop-shadow-2xl" />
               </div>
             </div>
             <div className="mt-6 text-center">
@@ -67,39 +63,32 @@ export default function LandingPage() {
           </div>
 
           {/* RIGHT — Hero content */}
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-700/50 bg-blue-950/40 text-blue-400 text-xs tracking-widest mb-6">
               <span className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse" />
               LIVE CRIME INTELLIGENCE · NAGPUR
             </div>
-
             <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-none mb-4">
               CRIME<span className="text-blue-500">OPS</span>
             </h1>
-
-            <p className="text-base text-zinc-300 max-w-lg mt-3 leading-relaxed">
+            <p className="text-sm md:text-base text-zinc-300 max-w-lg mt-3 leading-relaxed">
               Spatial crime intelligence platform built exclusively for{' '}
               <span className="text-blue-400 font-bold">Nagpur, Maharashtra</span>.
-              Analyze crime patterns and deploy resources where they matter most.
             </p>
-
             <p className="mt-3 text-xs tracking-widest text-zinc-600 uppercase">
-              PostGIS · DBSCAN Clustering · Spring Boot · React
+              PostGIS · DBSCAN · Spring Boot · React
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <button
-                onClick={() => navigate('/nagpur/dashboard')}
-                className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold tracking-widest rounded transition-all duration-200 hover:shadow-lg hover:shadow-blue-900/50 cursor-pointer">
+            <div className="flex flex-col sm:flex-row gap-3 mt-10 w-full sm:w-auto">
+              <button onClick={() => navigate('/nagpur/dashboard')}
+                className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold tracking-widest rounded transition-all cursor-pointer w-full sm:w-auto">
                 ANALYZE NAGPUR →
               </button>
               <a href="#methodology"
-                className="px-8 py-3 border border-blue-800/60 hover:border-blue-600 text-zinc-300 text-sm font-bold tracking-widest rounded transition-all duration-200 text-center">
+                className="px-8 py-3 border border-blue-800/60 hover:border-blue-600 text-zinc-300 text-sm font-bold tracking-widest rounded transition-all text-center w-full sm:w-auto">
                 HOW IT WORKS
               </a>
             </div>
           </div>
-
         </div>
       </section>
 
