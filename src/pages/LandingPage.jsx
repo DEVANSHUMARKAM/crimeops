@@ -35,11 +35,19 @@ export default function LandingPage() {
 
         {/* Crime BG image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
+          {/* Police tape background */}
+          <img
+            src="/police-tape.png"
+            alt=""
+            className="w-full h-full object-cover"
+            style={{ opacity: 0.08, filter: 'brightness(0.6)' }}
+          />
+          {/* Main crime scene overlay */}
           <img
             src="/crime-bg.png"
             alt="crime scene"
-            className="w-full h-full object-cover opacity-25"
-            style={{ filter: 'blur(3px) brightness(0.35)' }}
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ opacity: 0.20, filter: 'blur(3px) brightness(0.35)' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/90" />
         </div>
